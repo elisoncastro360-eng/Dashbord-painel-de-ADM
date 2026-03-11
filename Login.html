@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Login - Cassino</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="Login.css">
+
+</head>
+<body>
+
+<div class="login-container">
+
+<div class="login-box">
+
+<img src="logo.svg" class="logo-login" alt="Logo">
+
+<h2>Painel de Controle</h2>
+
+<form id="loginForm">
+<input type="text" id="username" placeholder="Usuário" required>
+<input type="password" id="password" placeholder="Senha" required>
+
+<button type="submit">Entrar</button>
+</form>
+
+<div class="divider">ou</div>
+
+<button id="btnBiometria" class="btn-bio">
+<span class="icon">☝️</span> Acessar com Digital
+</button>
+
+<p id="error"></p>
+<p id="status-bio"></p>
+
+</div>
+</div>
+
+<script src="Login.js"></script>
+
+</body>
+</html>
