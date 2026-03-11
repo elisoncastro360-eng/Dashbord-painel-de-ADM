@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Painel ADM</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="ADM.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar">
+
+<div class="admin-profile">
+<img src="logo.svg" class="logo">
+<h2>ADM</h2>
+</div>
+
+<ul>
+
+<li>
+<a href="index.html">
+<i data-lucide="layout-dashboard"></i>
+<span>Dashboard</span>
+</a>
+</li>
+
+<li>
+<a href="usuarios.html">
+<i data-lucide="users"></i>
+<span>Usuários</span>
+</a>
+</li>
+
+<li>
+<a href="depositos.html">
+<i data-lucide="wallet"></i>
+<span>Depósitos</span>
+</a>
+</li>
+
+<li>
+<a href="afiliados.html">
+<i data-lucide="user-plus"></i>
+<span>Afiliados</span>
+</a>
+</li>
+
+<li>
+<a href="jogos.html">
+<i data-lucide="gamepad-2"></i>
+<span>Jogos</span>
+</a>
+</li>
+
+<li>
+<a href="saldo.html">
+<i data-lucide="dollar-sign"></i>
+<span>Saldo</span>
+</a>
+</li>
+
+<li>
+<a href="configuracoes.html">
+<i data-lucide="settings"></i>
+<span>Configurações</span>
+</a>
+</li>
+
+</ul>
+
+</aside>
+
+<!-- MAIN -->
+
+<main class="main">
+
+<header class="top-header">
+
+<h1 class="titulo">Painel de Controle</h1>
+
+<div class="notificacao" id="btnNotificacao">
+<i data-lucide="bell"></i>
+<span class="badge">3</span>
+</div>
+
+<div class="menu-notificacoes" id="menuNotificacoes">
+
+<div class="noti-header">
+<h3>Notificações</h3>
+<a href="configuracoes.html" class="config-icon">
+<i data-lucide="settings"></i>
+</a>
+</div>
+
+<ul>
+
+<li>
+<i data-lucide="user-plus"></i>
+Novo usuário registrado
+</li>
+
+<li>
+<i data-lucide="wallet"></i>
+Novo depósito recebido
+</li>
+
+<li>
+<i data-lucide="alert-circle"></i>
+Sistema atualizado
+</li>
+
+</ul>
+
+</div>
+
+</header>
+
+<!-- CARDS -->
+
+<div class="kpis">
+
+<a href="saldo.html" class="card">
+<h3>Saldo</h3>
+<p id="saldo">R$ 0</p>
+</a>
+
+<a href="configuracoes.html" class="card">
+<h3>Configurações</h3>
+<p>Gerenciar</p>
+</a>
+
+<a href="afiliados.html" class="card">
+<h3>Afiliados</h3>
+<p id="afiliados">0</p>
+</a>
+
+<a href="usuarios.html" class="card">
+<h3>Usuários</h3>
+<p id="usuarios">0</p>
+</a>
+
+<a href="jogos.html" class="card">
+<h3>Jogos</h3>
+<p id="jogos">0</p>
+</a>
+
+</div>
+
+<!-- GRÁFICO -->
+
+<div class="chart-box">
+<canvas id="grafico"></canvas>
+</div>
+
+</main>
+
+<script src="ADM.js"></script>
+
+<script>
+lucide.createIcons();
+</script>
+
+</body>
+</html>
