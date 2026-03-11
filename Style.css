@@ -1,0 +1,142 @@
+body{
+margin:0;
+font-family:Arial;
+background:#021b12;
+color:white;
+}
+
+/* TOPBAR */
+
+.topbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 30px;
+background:#03261a;
+border-bottom:1px solid #064c36;
+}
+
+.logo{
+font-size:20px;
+font-weight:bold;
+}
+
+.actions{
+display:flex;
+align-items:center;
+gap:25px;
+}
+
+/* NOTIFICAÇÕES */
+
+.notification-container{
+position:relative;
+}
+
+.bell{
+font-size:22px;
+cursor:pointer;
+position:relative;
+}
+
+#count{
+position:absolute;
+top:-6px;
+right:-8px;
+background:#00ff9d;
+color:#021b12;
+font-size:11px;
+padding:3px 6px;
+border-radius:50%;
+font-weight:bold;
+}
+
+.panel{
+display:none;
+position:absolute;
+top:35px;
+right:0;
+width:280px;
+background:#03261a;
+border-radius:8px;
+box-shadow:0 0 15px rgba(0,0,0,0.6);
+overflow:hidden;
+}
+
+.panel-header{
+padding:12px;
+background:#043326;
+font-weight:bold;
+border-bottom:1px solid #06543c;
+}
+
+.panel ul{
+list-style:none;
+margin:0;
+padding:0;
+}
+
+.panel li{
+padding:12px;
+border-bottom:1px solid #06543c;
+transition:0.3s;
+cursor:pointer;
+}
+
+.panel li:hover{
+background:#054735;
+}
+
+/* PERFIL */
+
+.profile-container{
+position:relative;
+}
+
+.profile-icon img{
+width:36px;
+height:36px;
+border-radius:50%;
+cursor:pointer;
+border:2px solid #00ff9d;
+}
+
+.profile-menu{
+display:none;
+position:absolute;
+top:45px;
+right:0;
+width:180px;
+background:#03261a;
+border-radius:8px;
+overflow:hidden;
+box-shadow:0 0 15px rgba(0,0,0,0.6);
+}
+
+.profile-menu a{
+display:block;
+padding:12px;
+text-decoration:none;
+color:white;
+border-bottom:1px solid #06543c;
+transition:0.3s;
+}
+
+.profile-menu a:hover{
+background:#054735;
+}
+
+/* DASHBOARD */
+
+.dashboard{
+padding:40px;
+}
+
+button{
+background:#00ff9d;
+border:none;
+padding:12px 18px;
+border-radius:6px;
+font-weight:bold;
+cursor:pointer;
+}
